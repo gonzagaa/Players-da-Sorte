@@ -78,7 +78,7 @@ Premiações garantidas em fichas de Cash Game com saque instantâneo.</p>
                                     <p>Torça pela sua vez de ganhar</p>
                                 </div>
                             </div>
-                            <a href=""><button class="icon">Quero entrar no grupo agora<ion-icon name="logo-whatsapp"></ion-icon></button></a>
+                            <a target="_blank" href=""><button class="icon">Quero entrar no grupo agora<ion-icon name="logo-whatsapp"></ion-icon></button></a>
 
                             <div class="topics dois">
                                 <div class="topic">
@@ -141,28 +141,6 @@ Premiações garantidas em fichas de Cash Game com saque instantâneo.</p>
       }
 
       requestAnimationFrame(raf);
-    </script>
-    <script>
-        jQuery(document).ready(function($){
-            var sPageURL = window.location.search.substring(1), sURLVariables = sPageURL.split('&');
-            var parametrosGet = sURLVariables.join('&');
-            var linkAtribuido = '';
-            
-            if($(".link4Selet").length) {
-                $.each($(".link4Selet"), function (i, o) {
-                    if($(this).prop("tagName") == 'DIV') {
-                        var link = $(this).find("a").attr("href");
-                        if(link.toLowerCase().indexOf("origem") >= 0) {
-                            linkAtribuido = link + '&' + parametrosGet;
-                        } else {
-                            linkAtribuido = link + '?' + parametrosGet;
-                        }
-                        
-                        $(this).find('a').attr("href", linkAtribuido);
-                    }
-                });
-            }
-        });
     </script>
 </body>
 </html> 
